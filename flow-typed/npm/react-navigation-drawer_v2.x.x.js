@@ -490,6 +490,10 @@ declare module 'react-navigation-drawer' {
         openDrawer: () => boolean,
         closeDrawer: () => boolean,
         toggleDrawer: () => boolean,
+        addListener: (
+          eventName: string,
+          callback: NavigationEventCallback
+        ) => NavigationEventSubscription,
         ...
       };
 
