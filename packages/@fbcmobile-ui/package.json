@@ -16,6 +16,7 @@
     "dependencies": {
       "@99xt/first-born": "^1.1.8",
       "@react-native-community/async-storage": "^1.6.2",
+      "@react-native-community/datetimepicker": "^2.3.2",
       "@react-native-community/netinfo": "^4.7.0",
       "@react-native-mapbox-gl/maps": "^8.0.0",
       "beaver-logger": "^4.0.12",
