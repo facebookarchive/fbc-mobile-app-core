@@ -25,6 +25,8 @@ const Colors = {
   BrightRed: '#F02849',
   Cherry: '#F36B7F',
   DarkBlue: '#0000FF',
+  DeleteRed: '#FF6854',
+  DeleteRedBackground: '#FFE6E3',
   DisabledBackground: '#E4E6EB',
   DisabledText: '#BCC0C4',
   Divider: '#CFD1D5',

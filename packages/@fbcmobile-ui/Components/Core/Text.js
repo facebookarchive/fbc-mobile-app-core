@@ -25,6 +25,7 @@ export type Color =
   | 'gray'
   | 'disabled'
   | 'red'
+  | 'deleteRed'
   | 'lightGray';
 export type TextVariant =
   | 'h1'
@@ -97,6 +98,9 @@ const styles = StyleSheet.create({
   },
   redColor: {
     color: Colors.BrightRed,
+  },
+  deleteRedColor: {
+    color: Colors.DeleteRed,
   },
   lightWeight: {
     fontFamily: 'Roboto-Light',
