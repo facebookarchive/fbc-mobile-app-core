@@ -67,7 +67,6 @@ jobs:
           name: Install JUnit coverage reporter
           command: yarn add -W --dev jest-junit
       - run: yarn install
-      - run: yarn proto
       - run:
           name: Jest Tests
           command: yarn test-coverage
