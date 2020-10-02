@@ -2,7 +2,7 @@
 
 Collection of JS packages used by different FBC React Native applications
 
-**CI/CD Status:** [![CircleCI](https://app.circleci.com/pipelines/github/facebookincubator/fbc-mobile-app-core)](https://circleci.com/gh/facebookincubator/fbc-mobile-app-core)
+**CI/CD Status:** [![CircleCI](https://circleci.com/gh/facebookincubator/fbc-mobile-app-core/tree/master.svg?style=svg&circle-token=79641c16d4ad512b4add23a2d3b29c2a2076f463)](https://circleci.com/gh/facebookincubator/fbc-mobile-app-core)
 
 ## Tech Stack
 * The apps are mainly written with ReactNative + Relay GraphQL
