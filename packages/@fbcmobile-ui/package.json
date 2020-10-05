@@ -1,0 +1,52 @@
+{
+    "name": "@fbcmobile/ui",
+    "title": "ui",
+    "version": "1.0.0",
+    "description": "TODO",
+    "files": [
+      "README.md",
+      "index.js"
+    ],
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "license": "BSD",
+    "licenseFilename": "LICENSE",
+    "readmeFilename": "README.md",
+    "dependencies": {
+      "@99xt/first-born": "^1.1.8",
+      "@react-native-community/async-storage": "^1.6.2",
+      "@react-native-community/datetimepicker": "^2.3.2",
+      "@react-native-community/netinfo": "^4.7.0",
+      "@react-native-mapbox-gl/maps": "^8.0.0",
+      "beaver-logger": "^4.0.12",
+      "mcc-mnc-list-js": "^1.0.1",
+      "moment": "^2.24.0",
+      "react": "16.11.0",
+      "react-native": "0.62.2",
+      "react-navigation": "^4.3.7",
+      "react-native-collapsible": "^1.5.1",
+      "react-native-device-info": "^5.5.3",
+      "react-navigation-drawer": "^2.4.11",
+      "react-native-geolocation-service": "^4.0.0",
+      "react-native-gesture-handler": "1.6.1",
+      "react-native-image-crop-picker": "^0.28.0",
+      "react-native-material-dropdown": "^0.11.1",
+      "react-native-material-menu": "^1.1.0",
+      "react-native-material-ui": "^1.30.1",
+      "react-native-modal": "^11.5.4",
+      "react-native-modalbox": "^1.7.1",
+      "react-native-qrcode-scanner": "^1.2.1",
+      "react-native-raw-bottom-sheet": "^2.0.6",
+      "react-native-spinkit": "^1.2.0",
+      "react-native-shake": "^3.4.0",
+      "react-navigation-stack": "^2.3.11",
+      "react-navigation-tabs": "^2.8.11",
+      "react-native-view-shot": "^3.1.2",
+      "shortid": "^2.2.15"
+    },
+    "devDependencies": {
+      "fbt": "^0.14.0",
+      "react-native-vector-icons": "7.0.0"
+    }
+  }
