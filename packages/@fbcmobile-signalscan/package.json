@@ -1,32 +1,18 @@
 {
   "name": "@fbcmobile/signalscan",
-  "title": "signalscan",
-  "version": "1.0.0",
-  "description": "TODO",
-  "main": "index.js",
-  "files": [
-    "README.md",
-    "android",
-    "index.js"
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "1.0.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/@fbcmobile/signalscan.git",
-    "baseUrl": "https://github.com/github_account/@fbcmobile/signalscan"
+    "url": "https://github.com/facebookincubator/fbc-mobile-app-core",
+    "directory": "packages/@fbcmobile-signalscan"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "signalscan",
+    "wifiscan",
+    "cellscan"
   ],
-  "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
-  },
-  "license": "BSD",
-  "licenseFilename": "LICENSE",
-  "readmeFilename": "README.md",
+  "license": "BSD-2-Clause",
   "peerDependencies": {
     "react": "16.11.0",
     "react-native": "0.62.2"

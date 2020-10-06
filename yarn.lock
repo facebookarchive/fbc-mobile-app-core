@@ -764,7 +764,7 @@
     "@types/hammerjs" "^2.0.36"
 
 "@fbcmobile/signalscan@file:./packages/@fbcmobile-signalscan":
-  version "1.0.0"
+  version "1.0.1"
 
 "@hapi/address@2.x.x":
   version "2.1.4"
