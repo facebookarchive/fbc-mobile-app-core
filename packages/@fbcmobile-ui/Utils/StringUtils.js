@@ -67,7 +67,7 @@ export function isStrictPositiveNumber(text: string): boolean {
 }
 
 /**
- * Returns true if the string matches an IP address
+ * Returns true if the string matches an IPv4 address
  *
  * Taken from:
  * https://www.w3resource.com/javascript/form/ip-address-validation.php
@@ -76,6 +76,22 @@ export function isValidIPAddress(ipAddress: string): boolean {
   /* eslint-disable max-len */
   const ipRegex = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
   if (ipRegex.test(ipAddress)) {
+    return true;
+  }
+
+  return false;
+}
+
+/**
+ * Returns true if the string matches an IPv6 address
+ *
+ * Taken from:
+ * https://www.regexpal.com/?fam=104037
+ */
+export function isValidIPv6Address(ipAddress: string): boolean {
+  /* eslint-disable max-len */
+  const ipV6Regex = /^(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))$/;
+  if (ipV6Regex.test(ipAddress)) {
     return true;
   }
 

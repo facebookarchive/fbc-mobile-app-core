@@ -16,6 +16,7 @@ import {
   isStrictNumber,
   isStrictPositiveNumber,
   isValidIPAddress,
+  isValidIPv6Address,
   isValidPortNumber,
 } from '@fbcmobile/ui/Utils/StringUtils';
 
@@ -85,6 +86,25 @@ describe('StringUtils tests', () => {
     expect(isValidIPAddress('666.168')).toBeFalse();
 
     expect(isValidIPAddress('198.1685.34.235')).toBeFalse();
+  });
+
+  // isValidIPv6Address tests
+  test('Test correct IPv6 addresses returns true', () => {
+    expect(isValidIPv6Address('2620:10d:c079:3895::2')).toBeTrue();
+
+    expect(isValidIPv6Address('2001:db8::1:0')).toBeTrue();
+
+    expect(isValidIPv6Address('2001:0db8:85a3:0000:0000:8a2e:0370:7334')).toBeTrue();
+  });
+
+  test('Test invalid IPv6 addresses returns false', () => {
+    expect(isValidIPv6Address('192.168.0')).toBeFalse();
+
+    expect(isValidIPv6Address('1200:0000:AB00:1234:O000:2552:7777:1313')).toBeFalse();
+
+    expect(isValidIPv6Address('[2001:db8:0:1]:80')).toBeFalse();
+
+    expect(isValidIPv6Address('[2001:db8:0:1]')).toBeFalse();
   });
 
   // isValidPortNumber tests
