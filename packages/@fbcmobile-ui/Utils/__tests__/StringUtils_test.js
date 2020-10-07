@@ -94,13 +94,17 @@ describe('StringUtils tests', () => {
 
     expect(isValidIPv6Address('2001:db8::1:0')).toBeTrue();
 
-    expect(isValidIPv6Address('2001:0db8:85a3:0000:0000:8a2e:0370:7334')).toBeTrue();
+    expect(
+      isValidIPv6Address('2001:0db8:85a3:0000:0000:8a2e:0370:7334'),
+    ).toBeTrue();
   });
 
   test('Test invalid IPv6 addresses returns false', () => {
     expect(isValidIPv6Address('192.168.0')).toBeFalse();
 
-    expect(isValidIPv6Address('1200:0000:AB00:1234:O000:2552:7777:1313')).toBeFalse();
+    expect(
+      isValidIPv6Address('1200:0000:AB00:1234:O000:2552:7777:1313'),
+    ).toBeFalse();
 
     expect(isValidIPv6Address('[2001:db8:0:1]:80')).toBeFalse();
 
