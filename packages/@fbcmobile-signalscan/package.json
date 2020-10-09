@@ -1,0 +1,24 @@
+{
+  "name": "@fbcmobile/signalscan",
+  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebookincubator/fbc-mobile-app-core",
+    "directory": "packages/@fbcmobile-signalscan"
+  },
+  "keywords": [
+    "react-native",
+    "signalscan",
+    "wifiscan",
+    "cellscan"
+  ],
+  "license": "BSD-2-Clause",
+  "peerDependencies": {
+    "react": "16.11.0",
+    "react-native": "0.62.2"
+  },
+  "devDependencies": {
+    "react": "16.11.0",
+    "react-native": "0.62.2"
+  }
+}

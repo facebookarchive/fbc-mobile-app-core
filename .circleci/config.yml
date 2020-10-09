@@ -1,0 +1,139 @@
+version: 2.1
+
+aliases:
+  - &onlymaster
+    filters:
+      branches:
+        only: master
+
+jobs:
+  lint:
+    working_directory: ~/fbc-mobile-app-core
+    docker:
+      - image: circleci/node:12.8.0
+    steps:
+      - checkout
+      - restore_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+      - restore_cache:
+          key: node-v1-{{ checksum "package.json" }}-{{ arch }}
+      - run: yarn install
+      - run: yarn lint-coverage
+      - save_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+          paths:
+            - ~/.cache/yarn
+      - save_cache:
+          key: node-v1-{{ checksum "package.json" }}-{{ arch }}
+          paths:
+            - node_modules
+      - store_test_results:
+          path: reports/lint
+      - store_artifacts:
+          path: reports/lint
+  flow:
+    working_directory: ~/fbc-mobile-app-core
+    docker:
+      - image: circleci/node:12.8.0
+    steps:
+      - checkout
+      - restore_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+      - restore_cache:
+          key: node-v1-{{ checksum "package.json" }}-{{ arch }}
+      - run: yarn install
+      - run: yarn add -W --dev flow-bin@^0.134.0
+      - run: yarn add -W --dev flow-coverage-report
+      - run: yarn add -W --dev @kironeducation/flow-junit-transformer
+      - run: yarn flow check
+      - run: yarn flow-coverage
+      - run: yarn --silent flow check --json --max-workers 1 | yarn --silent flow-junit-transformer > reports/flow/flow-junit.xml
+      - save_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+          paths:
+            - ~/.cache/yarn
+      - save_cache:
+          key: node-v1-{{ checksum "package.json" }}-{{ arch }}
+          paths:
+            - node_modules
+      - store_test_results:
+          path: reports/flow
+      - store_artifacts:
+          path: reports/flow
+  test:
+    working_directory: ~/fbc-mobile-app-core
+    docker:
+      - image: circleci/android:api-28-node8-alpha
+    steps:
+      - checkout
+      - restore_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+      - restore_cache:
+          key: node-v1-{{ checksum "package.json" }}-{{ arch }}
+      - run:
+          name: Install JUnit coverage reporter
+          command: yarn add -W --dev jest-junit
+      - run: yarn install
+      - run:
+          name: Jest Tests
+          command: yarn test-coverage
+      - save_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+          paths:
+            - ~/.cache/yarn
+      - save_cache:
+          key: node-v1-{{ checksum "package.json" }}-{{ arch }}
+          paths:
+            - node_modules
+      - store_test_results:
+          path: ./reports/junit
+      - store_artifacts:
+          path: ./reports/junit
+  deploy:
+    docker:
+      - image: circleci/node
+    parameters:
+      package_dir:
+        type: string
+      package_name:
+        type: string
+    steps:
+      - checkout
+      - run:
+          name: Halt on no changes
+          working_directory: packages/<<parameters.package_dir>>
+          command: |
+            published=$(npm -s show <<parameters.package_name>> version || exit 0)
+            current=$(node -p "require('./package.json').version")
+            if [[ $published == $current ]]; then
+              circleci step halt
+            fi
+      - run:
+          name: npm auth
+          working_directory: packages/<<parameters.package_dir>>
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+      - run:
+          name: npm publish
+          working_directory: packages/<<parameters.package_dir>>
+          command: npm publish --access public
+
+
+workflows:
+  version: 2.1
+  build_and_test:
+    jobs:
+      - lint
+      - flow
+      - test
+  deploy:
+    jobs:
+      - deploy:
+          name: deploy-fbcmobile-signalscan
+          package_dir: "@fbcmobile-signalscan"
+          package_name: fbcmobile/signalscan
+          <<: *onlymaster
+      - deploy:
+          name: deploy-fbcmobile-ui
+          package_dir: "@fbcmobile-ui"
+          package_name: fbcmobile/ui
+          <<: *onlymaster
