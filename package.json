@@ -70,7 +70,5 @@
       "packages/*"
     ]
   },
-  "dependencies": {
-    "logkitty": "^0.7.1"
-  }
+  "dependencies": {}
 }
