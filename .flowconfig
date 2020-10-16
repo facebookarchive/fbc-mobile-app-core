@@ -45,7 +45,6 @@ flow-typed
 [options]
 emoji=true
 types_first=false
-server.max_workers=1
 
 esproposal.optional_chaining=enable
 module.system=haste
