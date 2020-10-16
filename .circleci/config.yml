@@ -47,7 +47,7 @@ jobs:
       - run: yarn add -W --dev @kironeducation/flow-junit-transformer
       - run: yarn flow check
       - run: yarn flow-coverage
-      - run: yarn --silent flow check --json --max-workers 1 | yarn --silent flow-junit-transformer > reports/flow/flow-junit.xml
+      - run: mkdir reports && mkdir reports/flow && yarn --silent flow check --json --max-workers 1 | yarn --silent flow-junit-transformer > reports/flow/flow-junit.xml
       - save_cache:
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
           paths:
