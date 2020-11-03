@@ -52,6 +52,7 @@ type Props = {
   +onSelect?: (photoData: ?PhotoResponse) => void,
   +annotation?: ?string,
   +addCaption?: (annotation: ?string) => void,
+  +showPreview?: boolean
 };
 
 const IMAGE_PICKER_PROPS = {
@@ -65,7 +66,7 @@ const IMAGE_PICKER_PROPS = {
   mediaType: 'photo',
 };
 
-const PhotoPicker = (props: Props) => {
+const PhotoPicker = ({showPreview = true, ...props}: Props) => {
   const [bottomSheetVisible, setBottomSheetVisible] = useState<boolean>(false);
   const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false);
   const [photoData, setPhotoData] = useState<?string>(props.photoData);
@@ -122,7 +123,7 @@ const PhotoPicker = (props: Props) => {
 
   return (
     <View style={styles.container}>
-      {photoData ? (
+      {photoData && showPreview ? (
         <TouchableOpacity
           style={StyleSheet.compose(styles.photoContainer, props.style)}>
           <Image style={styles.photo} source={{uri: photoData}} />
