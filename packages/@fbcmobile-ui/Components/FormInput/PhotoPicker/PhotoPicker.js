@@ -52,7 +52,7 @@ type Props = {
   +onSelect?: (photoData: ?PhotoResponse) => void,
   +annotation?: ?string,
   +addCaption?: (annotation: ?string) => void,
-  +showPreview?: boolean
+  +showPreview?: boolean,
 };
 
 const IMAGE_PICKER_PROPS = {
