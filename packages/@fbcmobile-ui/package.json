@@ -14,7 +14,7 @@
     "@react-native-community/datetimepicker": "^2.3.2",
     "@react-native-community/netinfo": "^4.7.0",
     "@react-native-mapbox-gl/maps": "^8.0.0",
-    "beaver-logger": "^4.0.12",
+    "beaver-logger": "4.0.12",
     "mcc-mnc-list-js": "^1.0.1",
     "moment": "^2.24.0",
     "react": "16.11.0",

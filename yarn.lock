@@ -2005,10 +2005,10 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-beaver-logger@^4.0.12:
-  version "4.0.15"
-  resolved "https://registry.yarnpkg.com/beaver-logger/-/beaver-logger-4.0.15.tgz#741eec52dba67603f86f898980e8c174101120b5"
-  integrity sha512-VtBche5Nd0uWd5AuXmXuRqTwlhR6pHQJaqvLS5+7xDyLTftfJcl/KCqY1HRPntcjJ/9FYH0em04HBeor6oei5Q==
+beaver-logger@4.0.12:
+  version "4.0.12"
+  resolved "https://registry.yarnpkg.com/beaver-logger/-/beaver-logger-4.0.12.tgz#2080918a57063b14f0e3b61e7161b963897acfc9"
+  integrity sha512-6RYZsB+YAb2N0GIf7nhtlDg7Zw0ZzqcGkJH5ET45a7SZJk4aHJD5zziIMCo7zYOhV7saTdvXOdfCFCeQPmG3vg==
   dependencies:
     belter "^1.0.17"
     zalgo-promise "^1.0.26"
