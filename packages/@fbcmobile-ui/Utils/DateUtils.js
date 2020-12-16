@@ -9,12 +9,12 @@
  * @format
  */
 
-'use strict';
+"use strict";
 
-import 'moment/min/locales';
-import * as React from 'react';
-import fbt from 'fbt';
-import moment from 'moment/min/moment-with-locales.min.js';
+import "moment/min/locales";
+import * as React from "react";
+import fbt from "fbt";
+import moment from "moment/min/moment-with-locales.min.js";
 
 /**
  * Checks if the device locale is available in moment and returns the locale
@@ -40,48 +40,48 @@ export function chooseMomentLocale(locale: string): string {
   }
   // use "en" (the default language and locale for my app) as
   // a fallback if we can't find any other locale
-  return 'en';
+  return "en";
 }
 
 export function getReadableDateString(
   date: moment$Moment,
-  locale: string,
+  locale: string
 ): React.Node {
   const today = moment();
-  const tomorrow = moment(today).add(1, 'd');
+  const tomorrow = moment(today).add(1, "d");
 
-  if (today.isSame(date, 'day')) {
+  if (today.isSame(date, "day")) {
     return <fbt desc="Date label shown as today">Today</fbt>;
-  } else if (tomorrow.isSame(date, 'day')) {
+  } else if (tomorrow.isSame(date, "day")) {
     return <fbt desc="Date label shown as tomorrow">Tomorrow</fbt>;
   }
 
-  return date.locale(locale).format('MMM DD');
+  return date.locale(locale).format("MMM DD");
 }
 
 export function getClosestFutureDayToToday(
   dates: Array<moment$Moment>,
-  jsLocale: string,
+  jsLocale: string
 ): ?moment$Moment {
   const todayMoment = moment()
     .locale(jsLocale)
-    .startOf('day');
+    .startOf("day");
 
   const closestMoment = dates
-    .map<moment$Moment>(date =>
+    .map<moment$Moment>((date) =>
       moment(date)
         .locale(jsLocale)
-        .startOf('day'),
+        .startOf("day")
     )
-    .filter(moment => moment.isSameOrAfter(todayMoment, 'days'))
+    .filter((moment) => moment.isSameOrAfter(todayMoment, "days"))
     .reduce((closestMoment, currentMoment) => {
       if (closestMoment == null) {
         return currentMoment;
       }
 
       if (
-        currentMoment.diff(todayMoment, 'days') <
-        closestMoment.diff(todayMoment, 'days')
+        currentMoment.diff(todayMoment, "days") <
+        closestMoment.diff(todayMoment, "days")
       ) {
         return currentMoment;
       }
@@ -92,43 +92,47 @@ export function getClosestFutureDayToToday(
 }
 
 export function getSimpleDateString(date: moment$Moment, locale: string) {
-  return date.locale(locale).format('MM DD YYYY');
+  return date.locale(locale).format("MM DD YYYY");
 }
 
 export function getLocaleDateTimeString(date: moment$Moment, locale: string) {
-  return date.locale(locale).format('L LT');
+  return date.locale(locale).format("L LT");
 }
 
 // TODO: Support translations
-export function timeSince(date: moment$Moment, locale: string) {
-  const now = moment().locale(locale);
+export function timeSince(
+  date: moment$Moment,
+  locale: string,
+  currentTime?: moment$Moment
+) {
+  const now = currentTime ? currentTime : moment().locale(locale);
 
   const intervals = {
-    years: {diff: now.diff(date, 'years'), unit: 'y'},
-    weeks: {diff: now.diff(date, 'weeks'), unit: 'w'},
-    days: {diff: now.diff(date, 'days'), unit: 'd'},
-    hours: {diff: now.diff(date, 'hours'), unit: 'h'},
-    minutes: {diff: now.diff(date, 'minutes'), unit: 'm'},
-    seconds: {diff: now.diff(date, 'seconds'), unit: 's'},
+    years: { diff: now.diff(date, "years"), unit: "y" },
+    weeks: { diff: now.diff(date, "weeks"), unit: "w" },
+    days: { diff: now.diff(date, "days"), unit: "d" },
+    hours: { diff: now.diff(date, "hours"), unit: "h" },
+    minutes: { diff: now.diff(date, "minutes"), unit: "m" },
+    seconds: { diff: now.diff(date, "seconds"), unit: "s" },
   };
 
   let intervalType = null;
   if (intervals.years.diff >= 1) {
-    intervalType = 'years';
+    intervalType = "years";
   } else if (intervals.weeks.diff >= 1) {
-    intervalType = 'weeks';
+    intervalType = "weeks";
   } else if (intervals.days.diff >= 1) {
-    intervalType = 'days';
+    intervalType = "days";
   } else if (intervals.hours.diff >= 1) {
-    intervalType = 'hours';
+    intervalType = "hours";
   } else if (intervals.minutes.diff >= 1) {
-    intervalType = 'minutes';
+    intervalType = "minutes";
   } else if (intervals.seconds.diff >= 1) {
-    intervalType = 'seconds';
+    intervalType = "seconds";
   }
 
   if (intervalType === null) {
-    return 'now';
+    return "now";
   }
 
   const interval = intervals[intervalType];

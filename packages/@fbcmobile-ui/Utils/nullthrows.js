@@ -9,11 +9,11 @@
  * @format
  */
 
-'use strict';
+"use strict";
 
-class NullValueError extends Error {
+export class NullValueError extends Error {
   constructor(message?: string) {
-    super('[NullValueError]' + (message ? ' ' + message : ''));
+    super("[NullValueError]" + (message ? " " + message : ""));
   }
 }
 

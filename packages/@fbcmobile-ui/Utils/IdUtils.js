@@ -9,11 +9,11 @@
  * @format
  */
 
-'use strict';
+"use strict";
 
-import shortid from 'shortid';
+import shortid from "shortid";
 
-const TEMP_ID_PREFIX = 'tmp@';
+export const TEMP_ID_PREFIX = "tmp@";
 
 export const generateTempId = (): string => {
   return `${TEMP_ID_PREFIX}_${shortid.generate()}`;
