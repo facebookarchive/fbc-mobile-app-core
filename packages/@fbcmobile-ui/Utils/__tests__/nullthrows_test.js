@@ -9,26 +9,24 @@
  * @format
  */
 
-"use strict";
-import { NullValueError } from "@fbcmobile/ui/Utils/nullthrows";
-import nullthrows from "@fbcmobile/ui/Utils/nullthrows";
+'use strict';
+import nullthrows from '@fbcmobile/ui/Utils/nullthrows';
 
-describe("nullthrows tests", () => {
-  test("test nullthrows with error message", () => {
+describe('nullthrows tests', () => {
+  test('test nullthrows with error message', () => {
     expect.assertions(1);
     try {
-      const oops = nullthrows(null, "oops");
-      const noOops = nullthrows(null);
+      const _oops = nullthrows(null, 'oops');
     } catch (error) {
-      expect(error).toHaveProperty("message", "[NullValueError] oops");
+      expect(error).toHaveProperty('message', '[NullValueError] oops');
     }
   });
-  test("test nullthrows", () => {
+  test('test nullthrows', () => {
     expect.assertions(1);
     try {
-      const noOops = nullthrows(null);
+      const _noOops = nullthrows(null);
     } catch (error) {
-      expect(error).toHaveProperty("message", "[NullValueError]");
+      expect(error).toHaveProperty('message', '[NullValueError]');
     }
   });
 });

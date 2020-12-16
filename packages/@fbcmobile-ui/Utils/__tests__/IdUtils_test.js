@@ -9,23 +9,23 @@
  * @format
  */
 
-"use strict";
+'use strict';
 
+import shortid from 'shortid';
 import {
   TEMP_ID_PREFIX,
   generateTempId,
   isTempId,
-} from "@fbcmobile/ui/Utils/IdUtils";
-import shortid from "shortid";
+} from '@fbcmobile/ui/Utils/IdUtils';
 
-describe("IdUtils tests", () => {
-  test("Test generate temp id", () => {
+describe('IdUtils tests', () => {
+  test('Test generate temp id', () => {
     const id = generateTempId();
-    expect(id).toContain(TEMP_ID_PREFIX + "_");
+    expect(id).toContain(TEMP_ID_PREFIX + '_');
   });
 
-  test("Test is temp id", () => {
-    const isId = isTempId(TEMP_ID_PREFIX + "_" + shortid.generate());
+  test('Test is temp id', () => {
+    const isId = isTempId(TEMP_ID_PREFIX + '_' + shortid.generate());
     expect(isId).toBeTrue();
   });
 });

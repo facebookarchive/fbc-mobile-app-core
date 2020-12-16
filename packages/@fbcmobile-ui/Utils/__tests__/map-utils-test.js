@@ -9,17 +9,17 @@
  * @format
  */
 
-"use strict";
+'use strict';
 
-import nullthrows from "@fbcmobile/ui/Utils/nullthrows";
+import nullthrows from '@fbcmobile/ui/Utils/nullthrows';
 import {
-  getDistanceBetweenLocations,
-  getGoogleNavigationUrlToLatLng,
-  getGeoUrlByLatLng,
   convertKmtoMiles,
+  getDistanceBetweenLocations,
+  getGeoUrlByLatLng,
+  getGoogleNavigationUrlToLatLng,
   navigateToCoords,
-} from "@fbcmobile/ui/Utils/MapUtils";
-import type { Coords } from "@fbcmobile/ui/Utils/MapUtils";
+} from '@fbcmobile/ui/Utils/MapUtils';
+import type {Coords} from '@fbcmobile/ui/Utils/MapUtils';
 
 /*
  * Test that distances between coordinates are as expected.
@@ -32,7 +32,7 @@ import type { Coords } from "@fbcmobile/ui/Utils/MapUtils";
  * 5 ->  0.00001 -> 1.11 m (accuracy limit of most mobile phones)
  * 6 -> 0.000001 -> 0.111 m
  */
-describe("MapUtils.getDistanceBetweenLocations", () => {
+describe('MapUtils.getDistanceBetweenLocations', () => {
   // FB HQ
   const coord1: Coords = {
     latitude: 37.48499,
@@ -44,47 +44,55 @@ describe("MapUtils.getDistanceBetweenLocations", () => {
     longitude: -122.14818,
   };
 
-  const emptyCoords: Coords = { latitude: null, longitude: null };
+  const emptyCoords: Coords = {latitude: null, longitude: null};
 
-  test("location coordinates are missing values", () => {
+  test('location coordinates are missing values', () => {
     expect(getDistanceBetweenLocations(emptyCoords, emptyCoords)).toBeNull();
   });
 
-  test("null coordinates", () => {
+  test('null coordinates', () => {
     expect(getDistanceBetweenLocations(null, null)).toBeNull();
   });
 
-  test("locations are the same", () => {
+  test('locations are the same', () => {
     const distance = nullthrows(getDistanceBetweenLocations(coord1, coord1));
     expect(distance).toBe(0);
   });
 
-  test("distance is close to expected", () => {
+  test('distance is close to expected', () => {
     const distance = nullthrows(getDistanceBetweenLocations(coord1, coord2));
     expect(distance).toBeCloseTo(2.8389);
   });
 
-  test("get google navigation", () => {
+  test('get google navigation', () => {
     const latLong = getGoogleNavigationUrlToLatLng(
-      coord1.latitude,
-      coord1.longitude
+      nullthrows(coord1.latitude),
+      nullthrows(coord1.longitude),
     );
     expect(latLong).toBe(
-      "google.navigation:q=" + coord1.latitude + "+" + coord1.longitude
+      'google.navigation:q=' +
+        nullthrows(coord1.latitude) +
+        '+' +
+        nullthrows(coord1.longitude),
     );
   });
 
-  test("get geo URL by lat long", () => {
-    const geoUrl = getGeoUrlByLatLng(coord1.latitude, coord1.longitude);
-    expect(geoUrl).toBe("geo:" + coord1.latitude + "," + coord1.longitude);
+  test('get geo URL by lat long', () => {
+    const geoUrl = getGeoUrlByLatLng(
+      nullthrows(coord1.latitude),
+      nullthrows(coord1.longitude),
+    );
+    expect(geoUrl).toBe(
+      'geo:' + nullthrows(coord1.latitude) + ',' + nullthrows(coord1.longitude),
+    );
   });
 
-  test("convert km to miles", () => {
+  test('convert km to miles', () => {
     const miles = convertKmtoMiles(5);
     expect(miles).toBeCloseTo(3.106855);
   });
 
-  test("navigate to coords", () => {
-    navigateToCoords(coord1.latitude, coord1.longitude);
+  test('navigate to coords', () => {
+    navigateToCoords(nullthrows(coord1.latitude), nullthrows(coord1.longitude));
   });
 });
