@@ -100,8 +100,12 @@ export function getLocaleDateTimeString(date: moment$Moment, locale: string) {
 }
 
 // TODO: Support translations
-export function timeSince(date: moment$Moment, locale: string) {
-  const now = moment().locale(locale);
+export function timeSince(
+  date: moment$Moment,
+  locale: string,
+  currentTime?: moment$Moment,
+) {
+  const now = currentTime ? currentTime : moment().locale(locale);
 
   const intervals = {
     years: {diff: now.diff(date, 'years'), unit: 'y'},

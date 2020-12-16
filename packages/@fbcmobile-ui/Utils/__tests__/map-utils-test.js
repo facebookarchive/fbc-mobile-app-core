@@ -12,7 +12,13 @@
 'use strict';
 
 import nullthrows from '@fbcmobile/ui/Utils/nullthrows';
-import {getDistanceBetweenLocations} from '@fbcmobile/ui/Utils/MapUtils';
+import {
+  convertKmtoMiles,
+  getDistanceBetweenLocations,
+  getGeoUrlByLatLng,
+  getGoogleNavigationUrlToLatLng,
+  navigateToCoords,
+} from '@fbcmobile/ui/Utils/MapUtils';
 import type {Coords} from '@fbcmobile/ui/Utils/MapUtils';
 
 /*
@@ -56,5 +62,37 @@ describe('MapUtils.getDistanceBetweenLocations', () => {
   test('distance is close to expected', () => {
     const distance = nullthrows(getDistanceBetweenLocations(coord1, coord2));
     expect(distance).toBeCloseTo(2.8389);
+  });
+
+  test('get google navigation', () => {
+    const latLong = getGoogleNavigationUrlToLatLng(
+      nullthrows(coord1.latitude),
+      nullthrows(coord1.longitude),
+    );
+    expect(latLong).toBe(
+      'google.navigation:q=' +
+        nullthrows(coord1.latitude) +
+        '+' +
+        nullthrows(coord1.longitude),
+    );
+  });
+
+  test('get geo URL by lat long', () => {
+    const geoUrl = getGeoUrlByLatLng(
+      nullthrows(coord1.latitude),
+      nullthrows(coord1.longitude),
+    );
+    expect(geoUrl).toBe(
+      'geo:' + nullthrows(coord1.latitude) + ',' + nullthrows(coord1.longitude),
+    );
+  });
+
+  test('convert km to miles', () => {
+    const miles = convertKmtoMiles(5);
+    expect(miles).toBeCloseTo(3.106855);
+  });
+
+  test('navigate to coords', () => {
+    navigateToCoords(nullthrows(coord1.latitude), nullthrows(coord1.longitude));
   });
 });
