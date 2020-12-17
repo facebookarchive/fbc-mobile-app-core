@@ -28,6 +28,7 @@ const CounterInput = ({count, minCount, maxCount, onCountChanged}: Props) => {
   return (
     <View style={styles.root}>
       <TouchableOpacity
+        testID="minus-icon"
         disabled={count <= minCount}
         onPress={() => onCountChanged(count - 1)}>
         <Icon
@@ -41,6 +42,7 @@ const CounterInput = ({count, minCount, maxCount, onCountChanged}: Props) => {
         {count < 10 ? `0${count}` : count}
       </Text>
       <TouchableOpacity
+        testID="plus-icon"
         disabled={count >= maxCount}
         onPress={() => onCountChanged(count + 1)}>
         <Icon

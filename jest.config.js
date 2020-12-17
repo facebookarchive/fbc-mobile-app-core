@@ -13,7 +13,7 @@
 module.exports = {
   preset: 'react-native',
   transformIgnorePatterns: [
-    'node_modules/(?!(react-native|crc|react-navigation)/)',
+    'node_modules/(?!(react-native|crc|react-navigation|react-native-material-ui|react-native-vector-icons|react-native-raw-bottom-sheet|react-native-spinkit)/)',
   ],
   transform: {
     '^.+\\.js$': 'babel-jest',

@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingBackdropContextProvider Tests LoadingBackdropContextProvider renders correctly 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#1877F2",
+      "borderRadius": 4,
+      "display": "flex",
+      "flexDirection": "row",
+      "opacity": 1,
+      "paddingHorizontal": 12,
+      "paddingVertical": 10.5,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 20,
+          },
+          null,
+          Object {
+            "fontFamily": "Roboto-Bold",
+          },
+          Object {
+            "textAlign": "left",
+          },
+        ],
+        Array [
+          Object {
+            "display": "flex",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+          Object {
+            "color": "white",
+          },
+          Object {
+            "fontSize": 16,
+          },
+          null,
+          Object {
+            "textAlign": "center",
+          },
+        ],
+      ]
+    }
+  >
+    Test
+  </Text>
+</View>
+`;
