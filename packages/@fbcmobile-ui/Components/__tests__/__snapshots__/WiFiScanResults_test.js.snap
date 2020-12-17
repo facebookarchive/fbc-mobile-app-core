@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WiFiScanResults Tests CellScanResults renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "paddingVertical": 12,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Array [
+            Object {
+              "color": "#484848",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#303846",
+            },
+            null,
+            Object {
+              "textAlign": "left",
+            },
+          ],
+          Object {
+            "flexGrow": 1,
+          },
+        ]
+      }
+    >
+      My WiFi, 11-
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 16,
+          },
+          Object {
+            "marginRight": 4,
+          },
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰌾
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 16,
+          },
+          null,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰤨
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`WiFiScanResults Tests empty CellScanResults renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+/>
+`;

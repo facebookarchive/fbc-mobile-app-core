@@ -128,7 +128,7 @@ class UserActionLogger {
   constructor() {
     // beaver-logger expects a value for window.location.protocol but
     // React Native doesn't polyfill window.location.  We'll do it here.
-    if (!window.location) {
+    if (typeof window != 'undefined' && !window.location) {
       window.location = {protocol: 'http'};
     }
 
