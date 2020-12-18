@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomSheet Tests BottomSheet renders correctly 1`] = `
+<Modal
+  animationType="none"
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  supportedOrientations={
+    Array [
+      "portrait",
+      "portrait-upside-down",
+      "landscape",
+      "landscape-left",
+      "landscape-right",
+    ]
+  }
+  transparent={true}
+  visible={false}
+>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Array [
+          Object {
+            "backgroundColor": "#00000077",
+            "flex": 1,
+          },
+          Object {
+            "backgroundColor": "rgba(0, 0, 0, 0.6)",
+          },
+        ],
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "flex": 1,
+          "opacity": 1,
+        }
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#fff",
+          "borderTopLeftRadius": 10,
+          "borderTopRightRadius": 10,
+          "height": 0,
+          "overflow": "hidden",
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+            Object {
+              "translateY": 0,
+            },
+          ],
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#1877F2",
+            "borderRadius": 4,
+            "display": "flex",
+            "flexDirection": "row",
+            "opacity": 1,
+            "paddingHorizontal": 12,
+            "paddingVertical": 10.5,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Array [
+                Object {
+                  "color": "#484848",
+                  "fontSize": 16,
+                  "fontWeight": "500",
+                  "lineHeight": 20,
+                },
+                null,
+                Object {
+                  "fontFamily": "Roboto-Bold",
+                },
+                Object {
+                  "textAlign": "left",
+                },
+              ],
+              Array [
+                Object {
+                  "display": "flex",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                Object {
+                  "color": "white",
+                },
+                Object {
+                  "fontSize": 16,
+                },
+                null,
+                Object {
+                  "textAlign": "center",
+                },
+              ],
+            ]
+          }
+        >
+          Test
+        </Text>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;

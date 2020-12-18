@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner Tests Banner renders correctly with message and skin 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFEAE6",
+      "left": 0,
+      "paddingHorizontal": 16,
+      "paddingVertical": 17,
+      "position": "absolute",
+      "right": 0,
+      "top": -162,
+      "zIndex": 1000,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#484848",
+          "fontSize": 15,
+          "fontWeight": "500",
+          "lineHeight": 20,
+        },
+        Object {
+          "color": "#F02849",
+        },
+        null,
+        Object {
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    hello
+  </Text>
+</View>
+`;
+
+exports[`Banner Tests Banner renders correctly with message and timeout 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#484848",
+      "left": 0,
+      "paddingHorizontal": 16,
+      "paddingVertical": 17,
+      "position": "absolute",
+      "right": 0,
+      "top": -162,
+      "zIndex": 1000,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#484848",
+          "fontSize": 15,
+          "fontWeight": "500",
+          "lineHeight": 20,
+        },
+        Object {
+          "color": "white",
+        },
+        null,
+        Object {
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    hello
+  </Text>
+</View>
+`;

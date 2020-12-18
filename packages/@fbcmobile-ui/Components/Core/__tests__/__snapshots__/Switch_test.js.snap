@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch Tests checked switch renders correctly 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(24, 119, 242, 1)",
+        "borderRadius": 11,
+        "height": 22,
+        "padding": 1,
+        "width": 36,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "borderRadius": 20,
+        "display": "flex",
+        "height": 20,
+        "justifyContent": "center",
+        "left": 1,
+        "position": "absolute",
+        "top": 1,
+        "transform": Array [
+          Object {
+            "translateX": 14,
+          },
+        ],
+        "width": 20,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#1877F2",
+            "fontSize": 12,
+          },
+          null,
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Switch Tests un-checked switch renders correctly 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(188, 192, 196, 1)",
+        "borderRadius": 11,
+        "height": 22,
+        "padding": 1,
+        "width": 36,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "borderRadius": 20,
+        "display": "flex",
+        "height": 20,
+        "justifyContent": "center",
+        "left": 1,
+        "position": "absolute",
+        "top": 1,
+        "transform": Array [
+          Object {
+            "translateX": 0,
+          },
+        ],
+        "width": 20,
+      }
+    }
+  />
+</View>
+`;

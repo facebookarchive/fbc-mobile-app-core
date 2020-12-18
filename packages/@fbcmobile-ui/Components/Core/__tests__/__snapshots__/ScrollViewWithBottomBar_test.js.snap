@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScrollViewWithBottomBar Tests ScrollViewWithBottomBar renders correctly 1`] = `
+<RCTScrollView
+  keyboardShouldPersistTaps="handled"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FBFBFB",
+      },
+      null,
+    ]
+  }
+>
+  <View>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#1877F2",
+          "borderRadius": 4,
+          "display": "flex",
+          "flexDirection": "row",
+          "opacity": 1,
+          "paddingHorizontal": 12,
+          "paddingVertical": 10.5,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Array [
+              Object {
+                "color": "#484848",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "lineHeight": 20,
+              },
+              null,
+              Object {
+                "fontFamily": "Roboto-Bold",
+              },
+              Object {
+                "textAlign": "left",
+              },
+            ],
+            Array [
+              Object {
+                "display": "flex",
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              Object {
+                "color": "white",
+              },
+              Object {
+                "fontSize": 16,
+              },
+              null,
+              Object {
+                "textAlign": "center",
+              },
+            ],
+          ]
+        }
+      >
+        Test
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`ScrollViewWithBottomBar Tests ScrollViewWithBottomBar renders correctly with bottom bar 1`] = `
+Array [
+  <RCTScrollView
+    keyboardShouldPersistTaps="handled"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FBFBFB",
+        },
+        Object {
+          "flexGrow": 1,
+        },
+      ]
+    }
+  >
+    <View>
+      <View
+        accessible={true}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#1877F2",
+            "borderRadius": 4,
+            "display": "flex",
+            "flexDirection": "row",
+            "opacity": 1,
+            "paddingHorizontal": 12,
+            "paddingVertical": 10.5,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Array [
+                Object {
+                  "color": "#484848",
+                  "fontSize": 16,
+                  "fontWeight": "500",
+                  "lineHeight": 20,
+                },
+                null,
+                Object {
+                  "fontFamily": "Roboto-Bold",
+                },
+                Object {
+                  "textAlign": "left",
+                },
+              ],
+              Array [
+                Object {
+                  "display": "flex",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                Object {
+                  "color": "white",
+                },
+                Object {
+                  "fontSize": 16,
+                },
+                null,
+                Object {
+                  "textAlign": "center",
+                },
+              ],
+            ]
+          }
+        >
+          Test
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>,
+  <View
+    style={
+      Object {
+        "backgroundColor": "#FBFBFB",
+        "elevation": 4,
+        "height": 71,
+        "paddingHorizontal": 16,
+        "paddingVertical": 15,
+        "shadowColor": "#33050505",
+        "shadowOffset": Object {
+          "height": -10,
+          "width": 0,
+        },
+        "shadowRadius": 2,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#1877F2",
+          "borderRadius": 4,
+          "display": "flex",
+          "flexDirection": "row",
+          "opacity": 1,
+          "paddingHorizontal": 12,
+          "paddingVertical": 10.5,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Array [
+              Object {
+                "color": "#484848",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "lineHeight": 20,
+              },
+              null,
+              Object {
+                "fontFamily": "Roboto-Bold",
+              },
+              Object {
+                "textAlign": "left",
+              },
+            ],
+            Array [
+              Object {
+                "display": "flex",
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              Object {
+                "color": "white",
+              },
+              Object {
+                "fontSize": 16,
+              },
+              null,
+              Object {
+                "textAlign": "center",
+              },
+            ],
+          ]
+        }
+      >
+        Test
+      </Text>
+    </View>
+  </View>,
+]
+`;

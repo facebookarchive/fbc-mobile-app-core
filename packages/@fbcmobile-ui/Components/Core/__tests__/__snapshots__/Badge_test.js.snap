@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge Tests Badge renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#1877F2",
+        "borderRadius": 15,
+        "height": 30,
+      },
+      Object {
+        "backgroundColor": "#1877F2",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Badge Tests Badge renders correctly with label 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#1877F2",
+        "borderRadius": 15,
+        "height": 30,
+      },
+      Object {
+        "backgroundColor": "#1877F2",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 15,
+          },
+          Object {
+            "color": "white",
+          },
+          Object {
+            "fontFamily": "Roboto-Medium",
+            "fontWeight": "500",
+          },
+          Object {
+            "textAlign": "left",
+          },
+        ],
+        Object {
+          "paddingHorizontal": 10,
+          "paddingVertical": 7,
+        },
+      ]
+    }
+  >
+    testing
+  </Text>
+</View>
+`;
+
+exports[`Badge Tests Badge renders correctly with label and variant 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#1877F2",
+        "borderRadius": 15,
+        "height": 30,
+      },
+      Object {
+        "backgroundColor": "#e7f3ff",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 15,
+          },
+          Object {
+            "color": "#1877F2",
+          },
+          Object {
+            "fontFamily": "Roboto-Medium",
+            "fontWeight": "500",
+          },
+          Object {
+            "textAlign": "left",
+          },
+        ],
+        Object {
+          "paddingHorizontal": 10,
+          "paddingVertical": 7,
+        },
+      ]
+    }
+  >
+    testing
+  </Text>
+</View>
+`;
+
+exports[`Badge Tests Badge renders correctly with label, variant, and icon 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#1877F2",
+        "borderRadius": 15,
+        "height": 30,
+      },
+      Object {
+        "backgroundColor": "#e7f3ff",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 9,
+        "paddingVertical": 3,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.54)",
+            "fontSize": 24,
+          },
+          null,
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <Text
+    style={
+      Array [
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 15,
+          },
+          Object {
+            "color": "#1877F2",
+          },
+          Object {
+            "fontFamily": "Roboto-Medium",
+            "fontWeight": "500",
+          },
+          Object {
+            "textAlign": "left",
+          },
+        ],
+        Object {
+          "paddingHorizontal": 10,
+          "paddingVertical": 7,
+        },
+      ]
+    }
+  >
+    testing
+  </Text>
+</View>
+`;

@@ -41,7 +41,9 @@
     "shortid": "^2.2.15"
   },
   "devDependencies": {
+    "@testing-library/react-native": "^7.1.0",
     "fbt": "^0.14.0",
+    "mockdate": "^3.0.2",
     "react-native-vector-icons": "7.0.0"
   }
 }

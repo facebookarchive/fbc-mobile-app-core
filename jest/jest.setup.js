@@ -19,3 +19,31 @@ jest.mock('react-native-device-info', () => {
     getModel: jest.fn(),
   };
 });
+
+function initTimeControls() {
+  const MockDate = require('mockdate');
+  const timerIncrement = 10;
+
+  global.managedClock = (funcToCall) => {
+      MockDate.set(0);
+      jest.useFakeTimers();
+      funcToCall();
+      MockDate.reset();
+      jest.useRealTimers();
+  }
+
+  global.moveTimeForward = (time = timerIncrement) => {
+      const moveTime = () => {
+          const now = Date.now();
+          MockDate.set(new Date(now + timerIncrement));
+          jest.advanceTimersByTime(timerIncrement);
+      }
+
+      const frames = time / timerIncrement;
+      for (let i = 0; i < frames; i++) {
+        moveTime();
+      }
+  }
+}
+
+initTimeControls();

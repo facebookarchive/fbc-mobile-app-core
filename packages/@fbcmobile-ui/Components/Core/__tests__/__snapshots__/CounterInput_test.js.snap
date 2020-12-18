@@ -1,0 +1,352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterInput Tests CounterInput renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="minus-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 30,
+          },
+          null,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰍷
+    </Text>
+  </View>
+  <Text
+    style={
+      Array [
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 20,
+            "fontWeight": "500",
+            "lineHeight": 25,
+          },
+          Object {
+            "color": "#303846",
+          },
+          Object {
+            "fontFamily": "Roboto-Regular",
+          },
+          Object {
+            "textAlign": "left",
+          },
+        ],
+        Object {
+          "marginHorizontal": 10,
+        },
+      ]
+    }
+  >
+    01
+  </Text>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="plus-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 30,
+          },
+          null,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰐙
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`CounterInput Tests CounterInput renders correctly with max count 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="minus-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 30,
+          },
+          null,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰍷
+    </Text>
+  </View>
+  <Text
+    style={
+      Array [
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 20,
+            "fontWeight": "500",
+            "lineHeight": 25,
+          },
+          Object {
+            "color": "#303846",
+          },
+          Object {
+            "fontFamily": "Roboto-Regular",
+          },
+          Object {
+            "textAlign": "left",
+          },
+        ],
+        Object {
+          "marginHorizontal": 10,
+        },
+      ]
+    }
+  >
+    10
+  </Text>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="plus-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#D8D8D8",
+            "fontSize": 30,
+          },
+          null,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰐙
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`CounterInput Tests CounterInput renders correctly with min count 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="minus-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#D8D8D8",
+            "fontSize": 30,
+          },
+          null,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰍷
+    </Text>
+  </View>
+  <Text
+    style={
+      Array [
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 20,
+            "fontWeight": "500",
+            "lineHeight": 25,
+          },
+          Object {
+            "color": "#303846",
+          },
+          Object {
+            "fontFamily": "Roboto-Regular",
+          },
+          Object {
+            "textAlign": "left",
+          },
+        ],
+        Object {
+          "marginHorizontal": 10,
+        },
+      ]
+    }
+  >
+    00
+  </Text>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="plus-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 30,
+          },
+          null,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰐙
+    </Text>
+  </View>
+</View>
+`;
