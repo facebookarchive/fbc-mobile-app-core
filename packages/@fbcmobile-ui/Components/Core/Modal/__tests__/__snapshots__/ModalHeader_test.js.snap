@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalHeader Tests ModalHeader renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "paddingVertical": 34,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+        "paddingLeft": 16,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#8F949D",
+            "fontSize": 28,
+          },
+          null,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰖭
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "flex": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Array [
+            Object {
+              "color": "#484848",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "lineHeight": 20,
+            },
+            null,
+            Object {
+              "fontFamily": "Roboto-Bold",
+            },
+            Object {
+              "textAlign": "left",
+            },
+          ],
+          Object {
+            "textAlign": "left",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      title
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`ModalHeader Tests ModalHeader renders correctly without show close button 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "paddingVertical": 34,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "flex": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Array [
+            Object {
+              "color": "#484848",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "lineHeight": 20,
+            },
+            null,
+            Object {
+              "fontFamily": "Roboto-Bold",
+            },
+            Object {
+              "textAlign": "left",
+            },
+          ],
+          Object {
+            "textAlign": "center",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      title
+    </Text>
+  </View>
+</View>
+`;
