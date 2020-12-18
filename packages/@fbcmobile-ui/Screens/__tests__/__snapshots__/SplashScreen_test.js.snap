@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SplashScreen Tests SplashScreen renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FBFBFB",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <RNSpinkit
+    color={4279793650}
+    size={40}
+    style={
+      Array [
+        Object {
+          "height": 40,
+          "width": 40,
+        },
+        undefined,
+      ]
+    }
+    type="ThreeBounce"
+  />
+</View>
+`;
+
+exports[`SplashScreen Tests SplashScreen renders correctly with text 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FBFBFB",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Array [
+          Object {
+            "color": "#484848",
+            "fontSize": 15,
+            "fontWeight": "500",
+            "lineHeight": 20,
+          },
+          null,
+          null,
+          Object {
+            "textAlign": "left",
+          },
+        ],
+        Object {
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    testing
+  </Text>
+  <RNSpinkit
+    color={4279793650}
+    size={40}
+    style={
+      Array [
+        Object {
+          "height": 40,
+          "width": 40,
+        },
+        undefined,
+      ]
+    }
+    type="ThreeBounce"
+  />
+</View>
+`;

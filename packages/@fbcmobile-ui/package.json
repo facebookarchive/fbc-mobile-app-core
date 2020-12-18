@@ -9,7 +9,6 @@
   },
   "license": "BSD-2-Clause",
   "dependencies": {
-    "@99xt/first-born": "^1.1.8",
     "@react-native-community/async-storage": "^1.6.2",
     "@react-native-community/datetimepicker": "^2.3.2",
     "@react-native-community/netinfo": "^4.7.0",

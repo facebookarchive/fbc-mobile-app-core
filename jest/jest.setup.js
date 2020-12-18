@@ -10,7 +10,7 @@
  */
 
 import MockAsyncStorage from 'mock-async-storage';
-import {NativeModules} from 'react-native';
+import {Image, NativeModules} from 'react-native';
 
 NativeModules.RNCNetInfo = {
   getCurrentState: jest.fn(() => Promise.resolve()),
@@ -18,8 +18,23 @@ NativeModules.RNCNetInfo = {
   removeListeners: jest.fn(),
 };
 
+Image.getSize = jest.fn();
+
 const mockImpl = new MockAsyncStorage();
 jest.mock('@react-native-community/async-storage', () => mockImpl);
+
+jest.mock('fbt', () => {
+  return {
+    fbt: jest.fn(() => jest.fn()),
+    toString: jest.fn(),
+  }
+})
+
+jest.mock('nullthrows', () => {
+  return {
+    nullthrows: jest.fn(),
+  }
+});
 
 jest.mock('react-native-device-info', () => {
   return {

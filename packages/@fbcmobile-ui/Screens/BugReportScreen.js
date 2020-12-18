@@ -21,13 +21,12 @@ import React, {useEffect, useRef, useState} from 'react';
 import Spinner from 'react-native-spinkit';
 import TextFormInput from '@fbcmobile/ui/Components/FormInput/TextFormInput';
 import UserActionLogger from '@fbcmobile/ui/Logging/UserActionLogger';
-import fbt from 'fbt';
-import nullthrows from 'nullthrows';
 import {Colors} from '@fbcmobile/ui/Theme';
 import {EVENT} from '@fbcmobile/ui/Logging/UserActionEvents';
 import {Icon} from 'react-native-material-ui';
 import {Image, ScrollView, View} from 'react-native';
 import {TextInput} from 'react-native';
+import {fbt} from 'fbt';
 
 type Props = NavigationNavigatorProps<{}, {params: {photoData: string}}>;
 
@@ -38,7 +37,7 @@ type ImageSize = {|
 
 const BugReportScreen = (props: Props) => {
   const {navigation} = props;
-  const photoData = nullthrows(navigation.getParam('photoData'));
+  const photoData = navigation.getParam('photoData');
   const [imageSize, setImageSize] = useState<?ImageSize>(null);
   const [details, setDetails] = useState<?string>(null);
   const [uploading, setUploading] = useState<boolean>(false);
