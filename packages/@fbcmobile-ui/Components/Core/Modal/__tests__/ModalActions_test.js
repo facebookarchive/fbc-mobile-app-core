@@ -45,4 +45,5 @@ describe('ModalActions Tests', () => {
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
-  });});
+  });
+});
