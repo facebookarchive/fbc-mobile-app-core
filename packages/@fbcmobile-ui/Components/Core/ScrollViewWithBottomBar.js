@@ -11,8 +11,6 @@
 
 'use strict';
 
-import type {TRefFor} from '@fbcmobile/ui/Components/Core/TRefFor.flow';
-
 import * as React from 'react';
 import {Colors} from '@fbcmobile/ui/Theme';
 import {ScrollView, StyleSheet} from 'react-native';
@@ -22,16 +20,11 @@ type Props = {
   +bottomBar?: React.Node,
 };
 
-const ScrollViewWithBottomBar = (
-  {children, bottomBar}: Props,
-  scrollViewRef: TRefFor<typeof ScrollView>,
-) => {
+const ScrollViewWithBottomBar = ({children, bottomBar}: Props) => {
   return (
     <>
       <ScrollView
         keyboardShouldPersistTaps="handled"
-        // $FlowFixMe - T72031710
-        ref={scrollViewRef}
         style={[
           styles.scrollView,
           bottomBar ? styles.contentWithBottomBar : null,
@@ -52,6 +45,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default React.forwardRef<Props, typeof ScrollView>(
-  ScrollViewWithBottomBar,
-);
+export default ScrollViewWithBottomBar;

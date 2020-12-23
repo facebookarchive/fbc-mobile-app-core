@@ -25,7 +25,7 @@ const OfflineBanner = () => {
     <>
       {netInfo.isConnected ? null : (
         <View style={styles.root}>
-          <Text style={styles.text}>
+          <Text color={'regular'} style={styles.text}>
             <fbt desc="Text saying the device has no connectivity so it is using cached data">
               No Connectivity - using cached data
             </fbt>
@@ -47,7 +47,6 @@ const styles = StyleSheet.create({
   text: {
     marginLeft: 10,
     textAlign: 'center',
-    color: Colors.BlueGray,
   },
 });
 export default OfflineBanner;
