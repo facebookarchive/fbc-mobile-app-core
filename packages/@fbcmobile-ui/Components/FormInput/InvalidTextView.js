@@ -12,8 +12,7 @@
 'use strict';
 
 import React from 'react';
-import {Colors} from '@fbcmobile/ui/Theme';
-import {Text} from '@99xt/first-born';
+import Text from '@fbcmobile/ui/Components/Core/Text';
 
 type Props = {
   +text: string,
@@ -22,14 +21,15 @@ type Props = {
 
 const InvalidTextView = (props: Props) => {
   return props.visible ? (
-    <Text style={styles.invalid}>{props.text}</Text>
+    <Text color="red" style={styles.invalid}>
+      {props.text}
+    </Text>
   ) : null;
 };
 
 const styles = {
   invalid: {
     marginTop: 5,
-    color: Colors.Red,
     fontSize: 15,
   },
 };

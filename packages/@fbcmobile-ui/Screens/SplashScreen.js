@@ -13,9 +13,9 @@
 
 import * as React from 'react';
 import Spinner from 'react-native-spinkit';
+import Text from '@fbcmobile/ui/Components/Core/Text';
 import {ApplicationStyles, Colors} from '@fbcmobile/ui/Theme';
 import {StyleSheet, View} from 'react-native';
-import {Text} from '@99xt/first-born';
 
 type Props = {
   +text?: ?React.Node,
@@ -27,7 +27,7 @@ const SplashScreen = (props: Props) => {
   return (
     <View style={styles.container}>
       {text != null && (
-        <Text style={styles.textStyle} size="h6">
+        <Text style={styles.textStyle} variant="h6">
           {text}
         </Text>
       )}

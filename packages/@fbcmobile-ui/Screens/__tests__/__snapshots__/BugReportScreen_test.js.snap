@@ -1,0 +1,330 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BugReportScreen Tests BugReportScreen renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FBFBFB",
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "padding": 20,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "display": "flex",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flex": 1,
+                    "marginBottom": 10,
+                  },
+                  null,
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#484848",
+                      "fontSize": 16,
+                      "fontWeight": "500",
+                      "lineHeight": 20,
+                    },
+                    Object {
+                      "color": "#484848",
+                    },
+                    Object {
+                      "fontFamily": "Roboto-Medium",
+                      "fontWeight": "500",
+                    },
+                    Object {
+                      "textAlign": "left",
+                    },
+                  ]
+                }
+              >
+                function mockConstructor() {
+        return fn.apply(this, arguments);
+      }
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Array [
+                      Object {
+                        "color": "#484848",
+                        "fontFamily": "Roboto-Light",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      },
+                      null,
+                      null,
+                      Object {
+                        "textAlign": "left",
+                      },
+                    ],
+                    Object {
+                      "marginTop": 4,
+                    },
+                  ]
+                }
+              >
+                function mockConstructor() {
+        return fn.apply(this, arguments);
+      }
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "display": "flex",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <TextInput
+                    allowFontScaling={true}
+                    autoCorrect={false}
+                    autoFocus={true}
+                    keyboardType="default"
+                    multiline={true}
+                    numberOfLines={3}
+                    onBlur={[Function]}
+                    onChangeText={[Function]}
+                    rejectResponderTermination={true}
+                    spellCheck={false}
+                    style={
+                      Object {
+                        "flex": 3,
+                        "fontSize": 20,
+                        "padding": 0,
+                        "textAlignVertical": "top",
+                      }
+                    }
+                    underlineColorAndroid="transparent"
+                    value={null}
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "display": "flex",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flex": 1,
+                    "marginBottom": 10,
+                  },
+                  null,
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#484848",
+                      "fontSize": 16,
+                      "fontWeight": "500",
+                      "lineHeight": 20,
+                    },
+                    Object {
+                      "color": "#484848",
+                    },
+                    Object {
+                      "fontFamily": "Roboto-Medium",
+                      "fontWeight": "500",
+                    },
+                    Object {
+                      "textAlign": "left",
+                    },
+                  ]
+                }
+              >
+                function mockConstructor() {
+        return fn.apply(this, arguments);
+      }
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#1877F2",
+                    "borderRadius": 4,
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "opacity": 1,
+                    "paddingHorizontal": 12,
+                    "paddingVertical": 10.5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Array [
+                        Object {
+                          "color": "#484848",
+                          "fontSize": 16,
+                          "fontWeight": "500",
+                          "lineHeight": 20,
+                        },
+                        null,
+                        Object {
+                          "fontFamily": "Roboto-Bold",
+                        },
+                        Object {
+                          "textAlign": "left",
+                        },
+                      ],
+                      Array [
+                        Object {
+                          "display": "flex",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        Object {
+                          "color": "white",
+                        },
+                        Object {
+                          "fontSize": 16,
+                        },
+                        null,
+                        Object {
+                          "textAlign": "left",
+                        },
+                      ],
+                    ]
+                  }
+                >
+                  <fbt
+                    desc="Submit bug button text"
+                  >
+                    Submit
+                  </fbt>
+                </Text>
+                <Text
+                  allowFontScaling={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "white",
+                        "fontSize": 20,
+                      },
+                      null,
+                      Object {
+                        "fontFamily": "Material Design Icons",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  󰁔
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

@@ -13,10 +13,10 @@
 
 import InvalidTextView from '@fbcmobile/ui/Components/FormInput/InvalidTextView';
 import React, {useEffect, useState} from 'react';
+import Text from '@fbcmobile/ui/Components/Core/Text';
 import fbt from 'fbt';
-import {Colors, Fonts} from '@fbcmobile/ui/Theme';
 import {Divider} from 'react-native-material-ui';
-import {Text} from '@99xt/first-born';
+import {Fonts} from '@fbcmobile/ui/Theme';
 import {TextInput, View} from 'react-native';
 
 export type InputType = 'TEXT' | 'EMAIL' | 'PHONE';
@@ -131,7 +131,7 @@ const TextFormInput = (
           ref={inputRef}
         />
         {props.unit != null && (
-          <Text size="h6" color={Colors.Gray70} style={styles.unitText}>
+          <Text variant="h6" color="gray" style={styles.unitText}>
             {props.unit}
           </Text>
         )}

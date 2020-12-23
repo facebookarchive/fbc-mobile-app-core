@@ -12,9 +12,9 @@
 'use strict';
 
 import React from 'react';
+import Text from '@fbcmobile/ui/Components/Core/Text';
 import {Colors} from '@fbcmobile/ui/Theme';
 import {ScrollView, TouchableOpacity, View} from 'react-native';
-import {Text} from '@99xt/first-born';
 
 type Props = {
   +tabs: Array<{
@@ -42,9 +42,9 @@ export default function TabView(props: Props) {
               tab.id === selectedTabId ? styles.selectedTab : null,
             ]}>
             <Text
-              size="sub_heading"
-              bold={true}
-              color={selectedTabId === tab.id ? Colors.Black : Colors.Gray60}>
+              variant="h7"
+              weight="bold"
+              color={selectedTabId === tab.id ? 'regular' : 'gray'}>
               {tab.name.toUpperCase()}
             </Text>
           </TouchableOpacity>

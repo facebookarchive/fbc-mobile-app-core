@@ -13,11 +13,12 @@
 
 import type {Coords} from '@fbcmobile/ui/Utils/MapUtils';
 
+import Button from '@fbcmobile/ui/Components/Core/Button';
 import MapboxGL from '@react-native-mapbox-gl/maps';
 import React, {useState} from 'react';
+import Text from '@fbcmobile/ui/Components/Core/Text';
 import fbt from 'fbt';
 import {ActivityIndicator, View} from 'react-native';
-import {Button, Text} from '@99xt/first-born';
 import {Colors} from '@fbcmobile/ui/Theme';
 import {Icon} from 'react-native-material-ui';
 
@@ -60,7 +61,7 @@ const CoordsInput = (props: Props) => {
     <View style={styles.container}>
       <View style={styles.inputContainer}>
         <View style={styles.fieldContainer}>
-          <Text size="sub_heading" color={Colors.Gray70}>
+          <Text variant="h7" color="gray">
             <fbt desc="Label for latitude coordinate">Latitude</fbt>
           </Text>
           <Text style={styles.text}>
@@ -72,7 +73,7 @@ const CoordsInput = (props: Props) => {
           </Text>
         </View>
         <View style={styles.fieldContainer}>
-          <Text size="sub_heading" color={Colors.Gray70}>
+          <Text variant="h7" color="gray">
             <fbt desc="Label for longitude coordinate">Longitude</fbt>
           </Text>
           <Text style={styles.text}>
@@ -85,11 +86,8 @@ const CoordsInput = (props: Props) => {
         </View>
         <View style={styles.fieldContainer}>
           {userLocation ? (
-            <Button
-              color={Colors.Blue}
-              size="small"
-              onPress={setCoordsToUserLocation}>
-              <Text bold>
+            <Button onPress={setCoordsToUserLocation}>
+              <Text weight="bold">
                 {fbt(
                   'My Location',
                   'My location button text to get GPS coordinates',
