@@ -15,3 +15,13 @@ List of changes for every update.
 - 1.0.4
 
   - Lock version of beaver-logger to 4.0.12
+
+- 1.0.5
+
+  - Added tests and upgraded dependencies
+
+### @fbcmobile/signalscan
+
+- 1.0.2
+
+  - Upgraded dependencies
