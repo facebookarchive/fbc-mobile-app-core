@@ -11,7 +11,6 @@
 
 'use strict';
 
-import type {TRefFor} from '@fbcmobile/ui/Components/Core/TRefFor.flow';
 import type {ViewStyleProp} from 'react-native/Libraries/StyleSheet/StyleSheet';
 
 import * as React from 'react';
@@ -20,7 +19,7 @@ import RNShake from 'react-native-shake';
 import ScrollViewWithBottomBar from '@fbcmobile/ui/Components/Core/ScrollViewWithBottomBar';
 import fbt from 'fbt';
 import {ApplicationStyles} from '@fbcmobile/ui/Theme';
-import {I18nManager, ScrollView, StyleSheet, View} from 'react-native';
+import {I18nManager, StyleSheet, View} from 'react-native';
 import {Toolbar as MToolbar} from 'react-native-material-ui';
 import {captureScreen} from 'react-native-view-shot';
 

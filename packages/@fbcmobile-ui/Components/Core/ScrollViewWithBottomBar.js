@@ -11,8 +11,6 @@
 
 'use strict';
 
-import type {TRefFor} from '@fbcmobile/ui/Components/Core/TRefFor.flow';
-
 import * as React from 'react';
 import {Colors} from '@fbcmobile/ui/Theme';
 import {ScrollView, StyleSheet} from 'react-native';
@@ -22,9 +20,7 @@ type Props = {
   +bottomBar?: React.Node,
 };
 
-const ScrollViewWithBottomBar = (
-  {children, bottomBar}: Props,
-) => {
+const ScrollViewWithBottomBar = ({children, bottomBar}: Props) => {
   return (
     <>
       <ScrollView
@@ -49,4 +45,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default  ScrollViewWithBottomBar;
+export default ScrollViewWithBottomBar;
