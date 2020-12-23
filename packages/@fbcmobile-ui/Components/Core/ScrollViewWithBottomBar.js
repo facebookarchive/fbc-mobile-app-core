@@ -24,14 +24,11 @@ type Props = {
 
 const ScrollViewWithBottomBar = (
   {children, bottomBar}: Props,
-  scrollViewRef: TRefFor<typeof ScrollView>,
 ) => {
   return (
     <>
       <ScrollView
         keyboardShouldPersistTaps="handled"
-        // $FlowFixMe - T72031710
-        ref={scrollViewRef}
         style={[
           styles.scrollView,
           bottomBar ? styles.contentWithBottomBar : null,
@@ -52,6 +49,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default React.forwardRef<Props, typeof ScrollView>(
-  ScrollViewWithBottomBar,
-);
+export default  ScrollViewWithBottomBar;

@@ -13,7 +13,6 @@ import MockAsyncStorage from 'mock-async-storage';
 import {Image, NativeModules} from 'react-native';
 
 NativeModules.RNCNetInfo = {
-  getCurrentState: jest.fn(() => Promise.resolve()),
   addListener: jest.fn(),
   removeListeners: jest.fn(),
 };

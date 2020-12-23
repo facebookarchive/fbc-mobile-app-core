@@ -313,7 +313,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   itemText: {
-    color: Colors.Black,
     marginLeft: 10,
   },
 });

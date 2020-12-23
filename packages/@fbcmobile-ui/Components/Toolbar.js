@@ -43,7 +43,7 @@ type Props = {|
   +style?: ViewStyleProp,
 |};
 
-const Toolbar = (props: Props, scrollViewRef: TRefFor<typeof ScrollView>) => {
+const Toolbar = (props: Props) => {
   const {
     title,
     children,
@@ -135,7 +135,7 @@ const Toolbar = (props: Props, scrollViewRef: TRefFor<typeof ScrollView>) => {
           }
         }}
       />
-      <ScrollViewWithBottomBar ref={scrollViewRef} bottomBar={bottomBarContent}>
+      <ScrollViewWithBottomBar bottomBar={bottomBarContent}>
         {children}
       </ScrollViewWithBottomBar>
     </View>
@@ -149,4 +149,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default React.forwardRef<Props, typeof ScrollView>(Toolbar);
+export default Toolbar;
