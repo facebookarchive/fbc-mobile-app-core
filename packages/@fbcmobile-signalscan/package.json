@@ -1,6 +1,7 @@
 {
   "name": "@fbcmobile/signalscan",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "description": "This package provides React Native modules to scan Wi-Fi and Cellular networks.",
   "repository": {
     "type": "git",
     "url": "https://github.com/facebookincubator/fbc-mobile-app-core",

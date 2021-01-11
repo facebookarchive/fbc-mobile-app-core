@@ -1,6 +1,6 @@
 {
   "name": "@fbcmobile/ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This package provides FBC's unified UI components for React Native applications.",
   "repository": {
     "type": "git",
