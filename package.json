@@ -64,7 +64,8 @@
   },
   "resolutions": {
     "@react-native-community/cli-debugger-ui": "4.9.0",
-    "yargs-parser": "20.2.2"
+    "yargs-parser": "20.2.2",
+    "global-modules": "2.0.0"
   },
   "workspaces": {
     "packages": [
