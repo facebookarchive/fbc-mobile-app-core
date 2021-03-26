@@ -44,9 +44,11 @@ const BugReportScreen = (props: Props) => {
   const inputRef = useRef<?React$ElementRef<typeof TextInput>>(null);
 
   useEffect(() => {
-    Image.getSize(photoData, (width: number, height: number) =>
-      setImageSize({width, height}),
-    );
+    if (photoData != null) {
+      Image.getSize(photoData, (width: number, height: number) =>
+        setImageSize({width, height}),
+      );
+    }
   }, [photoData]);
 
   return (
